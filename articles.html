@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NovaWiki — a student-built web development learning hub.">
+    <title>Library | NovaWiki</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body data-page="articles">
+    <div id="scrollProgress" aria-hidden="true"></div><a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner"><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="35"
+                    height="35">Nova<span>Wiki</span></a><button id="menuToggle" class="icon-button menu-toggle"
+                aria-expanded="false" aria-controls="navigation" type="button">☰ <span
+                    class="sr-only">Menu</span></button>
+            <nav id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="articles.html"
+                    aria-current="page">Library</a><a href="roadmap.html">Roadmap</a><a href="resources.html">Live
+                    resources</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+            <div class="header-actions"><button id="themeToggle" class="theme-toggle" type="button" role="switch"
+                    aria-checked="false" aria-label="Dark mode"><span class="theme-knob">☀</span></button><a
+                    id="accountLink" class="button small outline" href="login.html">Log in</a></div>
+        </div>
+    </header>
+    <main id="main" class="shell main-content">
+        <section class="page-intro">
+            <p class="eyebrow">01 / KNOWLEDGE LIBRARY</p>
+            <h1>Explore the <em>essentials.</em></h1>
+            <p class="lead">Find concise explanations, examples and trusted documentation. Save the topics you want to
+                revisit.</p>
+        </section>
+        <section class="library-panel"><label for="wikiSearch">Search the library</label>
+            <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="wikiSearch" type="search"
+                    placeholder="Search HTML, layout, events…" autocomplete="off"
+                    aria-controls="searchSuggestions"><button class="plain" type="button"
+                    id="clearSearch">Clear</button>
+                <div id="searchSuggestions" class="suggestions" hidden></div>
+            </div>
+            <div class="filter-row" aria-label="Filter topics"><button class="filter active" data-category="all"
+                    type="button">All</button><button class="filter" data-category="html"
+                    type="button">HTML</button><button class="filter" data-category="css"
+                    type="button">CSS</button><button class="filter" data-category="javascript"
+                    type="button">JavaScript</button><button class="filter" data-category="tools"
+                    type="button">Tools</button><button class="filter" data-category="saved" type="button">★
+                    Saved</button></div>
+            <p id="articleCount" class="muted" role="status"></p>
+        </section>
+        <div id="articleCards" class="card-grid"></div>
+        <section class="section snippet-panel">
+            <div>
+                <p class="eyebrow">TRY IT YOURSELF</p>
+                <h2>Your first line of JavaScript.</h2>
+                <p>Copy this snippet and run it in your browser console.</p>
+            </div>
+            <div class="snippet"><code>console.log("Hello NovaWiki!");</code><button class="button outline copy-code"
+                    type="button">Copy</button></div>
+        </section>
+        <section class="cta">
+            <div>
+                <h2>Not sure where to begin?</h2>
+                <p>Get a recommendation based on your interests.</p>
+            </div><button id="surpriseButton" class="button primary" type="button">✦ Surprise me</button>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <div><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="30"
+                        height="30">Nova<span>Wiki</span></a>
+                <p>Made for curious minds. Built by students.</p>
+            </div>
+            <div><a href="articles.html">Library</a><a href="resources.html">Resources</a><a href="contact.html">Get in
+                    touch</a></div>
+            <div><strong>AITU · SE-2516</strong>
+                <p>Web Technologies · Final Project 2026</p>
+            </div>
+        </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>

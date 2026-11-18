@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NovaWiki — a student-built web development learning hub.">
+    <title>Sign up | NovaWiki</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body data-page="signup">
+    <div id="scrollProgress" aria-hidden="true"></div><a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner"><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="35"
+                    height="35">Nova<span>Wiki</span></a><button id="menuToggle" class="icon-button menu-toggle"
+                aria-expanded="false" aria-controls="navigation" type="button">☰ <span
+                    class="sr-only">Menu</span></button>
+            <nav id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a
+                    href="articles.html">Library</a><a href="roadmap.html">Roadmap</a><a href="resources.html">Live
+                    resources</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+            <div class="header-actions"><button id="themeToggle" class="theme-toggle" type="button" role="switch"
+                    aria-checked="false" aria-label="Dark mode"><span class="theme-knob">☀</span></button><a
+                    id="accountLink" class="button small outline" href="login.html">Log in</a></div>
+        </div>
+    </header>
+    <main id="main" class="shell main-content">
+        <section class="page-intro">
+            <p class="eyebrow">04 / JOIN NOVAWIKI</p>
+            <h1>Stay curious.<br><em>Keep learning.</em></h1>
+            <p class="lead">Create a demo account to explore your personal learning dashboard.</p>
+        </section>
+        <section class="auth-layout">
+            <div class="auth-aside"><img src="images/logo.svg" alt="" width="64" height="64">
+                <h2>Your learning journey begins here.</h2>
+                <p>Save articles, follow your roadmap, and make your learning space your own.</p>
+                <div class="aside-item">✓ Local demo profile</div>
+                <div class="aside-item">✓ Saved topics and progress</div>
+                <div class="aside-item">✓ Seamless light and dark themes</div>
+                <p class="demo-note">Classroom prototype. Use fictional data and a test password, not your real
+                    credentials.</p>
+            </div>
+            <div class="panel auth-panel">
+                <h2>Create an account</h2>
+                <p class="muted">Already registered? <a href="login.html" class="text-link">Log in</a></p>
+                <form id="signupForm" novalidate>
+                    <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text"
+                            autocomplete="name" placeholder="Demo Learner" aria-describedby="nameError"><small
+                            class="error" id="nameError" aria-live="polite"></small></div>
+                    <div class="field"><label for="email">Email</label><input id="email" name="email" type="text"
+                            autocomplete="email" placeholder="learner@example.com" aria-describedby="emailError"><small
+                            class="error" id="emailError" aria-live="polite"></small></div>
+                    <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel"
+                            autocomplete="tel" placeholder="+7 700 123 4567" aria-describedby="phoneError"><small
+                            class="error" id="phoneError" aria-live="polite"></small></div>
+                    <div class="field"><label for="password">Password</label><input id="password" name="password"
+                            type="password" autocomplete="new-password"
+                            placeholder="8+ characters, upper/lowercase, number, symbol"
+                            aria-describedby="passwordError"><small class="error" id="passwordError"
+                            aria-live="polite"></small></div>
+                    <div class="field"><label for="confirm">Confirm password</label><input id="confirm" name="confirm"
+                            type="password" autocomplete="new-password" placeholder="Repeat test password"
+                            aria-describedby="confirmError"><small class="error" id="confirmError"
+                            aria-live="polite"></small></div><button class="button primary wide" type="submit">Create
+                        account <span aria-hidden="true">↗</span></button>
+                    <p class="form-status" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <div><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="30"
+                        height="30">Nova<span>Wiki</span></a>
+                <p>Made for curious minds. Built by students.</p>
+            </div>
+            <div><a href="articles.html">Library</a><a href="resources.html">Resources</a><a href="contact.html">Get in
+                    touch</a></div>
+            <div><strong>AITU · SE-2516</strong>
+                <p>Web Technologies · Final Project 2026</p>
+            </div>
+        </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>

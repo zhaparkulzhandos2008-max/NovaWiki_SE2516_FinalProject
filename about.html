@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NovaWiki — a student-built web development learning hub.">
+    <title>About | NovaWiki</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body data-page="about">
+    <div id="scrollProgress" aria-hidden="true"></div><a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner"><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="35"
+                    height="35">Nova<span>Wiki</span></a><button id="menuToggle" class="icon-button menu-toggle"
+                aria-expanded="false" aria-controls="navigation" type="button">☰ <span
+                    class="sr-only">Menu</span></button>
+            <nav id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a
+                    href="articles.html">Library</a><a href="roadmap.html">Roadmap</a><a href="resources.html">Live
+                    resources</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions"><button id="themeToggle" class="theme-toggle" type="button" role="switch"
+                    aria-checked="false" aria-label="Dark mode"><span class="theme-knob">☀</span></button><a
+                    id="accountLink" class="button small outline" href="login.html">Log in</a></div>
+        </div>
+    </header>
+    <main id="main" class="shell main-content">
+        <section class="page-intro">
+            <p class="eyebrow">06 / OUR STORY</p>
+            <h1>Made for <em>curious minds.</em></h1>
+            <p class="lead">NovaWiki is a student-built educational website that makes the foundations of the web
+                approachable.</p>
+        </section>
+        <section class="two-col">
+            <div class="panel">
+                <p class="eyebrow">OUR PURPOSE</p>
+                <h2>Make the web less intimidating.</h2>
+                <p>We combine simple explanations, visual examples, curated references and small learning milestones.
+                    NovaWiki is designed for students and beginners who want a reliable place to start.</p><a
+                    class="button primary" href="articles.html">Start learning ↗</a>
+            </div>
+            <div class="panel">
+                <p class="eyebrow">HOW IT WORKS</p>
+                <h2>One connected experience.</h2>
+                <p>Discover topics, save favorites, follow your progress and find wider learning resources through a
+                    public API. All personalization stays in the browser.</p><a class="button outline"
+                    href="roadmap.html">Explore the roadmap ↗</a>
+            </div>
+        </section>
+        <section class="section">
+            <p class="eyebrow">THE TEAM · SE-2516</p>
+            <h2>Built at Astana IT University.</h2>
+            <div class="card-grid">
+                <div class="team-card"><span class="avatar">A</span>
+                    <h3>Alikhan</h3>
+                    <p>Team member</p>
+                </div>
+                <div class="team-card"><span class="avatar">Z</span>
+                    <h3>Zhandos</h3>
+                    <p>Team member</p>
+                </div>
+                <div class="team-card"><span class="avatar">A</span>
+                    <h3>Adilzhan</h3>
+                    <p>Team member</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <p class="eyebrow">GOOD TO KNOW</p>
+            <h2>Frequently asked questions.</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>Is NovaWiki free?</summary>
+                    <p>Yes. Learning materials and demo accounts are free.</p>
+                </details>
+                <details>
+                    <summary>Do I need programming experience?</summary>
+                    <p>No. The roadmap starts from the fundamentals.</p>
+                </details>
+                <details>
+                    <summary>Where is my account data stored?</summary>
+                    <p>Only in your current browser using localStorage. No backend or real authentication service is
+                        connected.</p>
+                </details>
+                <details>
+                    <summary>What if the API is unavailable?</summary>
+                    <p>The Live resources page shows a clear error and offers curated reference links.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <div><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="30"
+                        height="30">Nova<span>Wiki</span></a>
+                <p>Made for curious minds. Built by students.</p>
+            </div>
+            <div><a href="articles.html">Library</a><a href="resources.html">Resources</a><a href="contact.html">Get in
+                    touch</a></div>
+            <div><strong>AITU · SE-2516</strong>
+                <p>Web Technologies · Final Project 2026</p>
+            </div>
+        </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>

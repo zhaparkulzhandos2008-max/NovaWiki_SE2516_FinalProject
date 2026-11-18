@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NovaWiki — a student-built web development learning hub.">
+    <title>Log in | NovaWiki</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body data-page="login">
+    <div id="scrollProgress" aria-hidden="true"></div><a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner"><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="35"
+                    height="35">Nova<span>Wiki</span></a><button id="menuToggle" class="icon-button menu-toggle"
+                aria-expanded="false" aria-controls="navigation" type="button">☰ <span
+                    class="sr-only">Menu</span></button>
+            <nav id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a
+                    href="articles.html">Library</a><a href="roadmap.html">Roadmap</a><a href="resources.html">Live
+                    resources</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+            <div class="header-actions"><button id="themeToggle" class="theme-toggle" type="button" role="switch"
+                    aria-checked="false" aria-label="Dark mode"><span class="theme-knob">☀</span></button><a
+                    id="accountLink" class="button small outline" href="login.html">Log in</a></div>
+        </div>
+    </header>
+    <main id="main" class="shell main-content">
+        <section class="page-intro">
+            <p class="eyebrow">04 / YOUR ACCOUNT</p>
+            <h1>Welcome <em>back.</em></h1>
+            <p class="lead">Continue your NovaWiki learning journey.</p>
+        </section>
+        <section class="auth-layout">
+            <div class="auth-aside"><img src="images/logo.svg" alt="" width="64" height="64">
+                <h2>Pick up where you left off.</h2>
+                <p>Your profile, saved topics and progress stay in this browser.</p>
+                <p class="demo-note">This is a local classroom authentication simulation, not a real account service.
+                </p>
+            </div>
+            <div class="panel auth-panel">
+                <h2>Log in</h2>
+                <p class="muted">New to NovaWiki? <a href="signup.html" class="text-link">Create an account</a></p>
+                <form id="loginForm" novalidate>
+                    <div class="field"><label for="email">Email</label><input id="email" name="email" type="text"
+                            autocomplete="email" placeholder="learner@example.com" aria-describedby="emailError"><small
+                            class="error" id="emailError" aria-live="polite"></small></div>
+                    <div class="field"><label for="password">Password</label><input id="password" name="password"
+                            type="password" autocomplete="current-password" placeholder="Your test password"
+                            aria-describedby="passwordError"><small class="error" id="passwordError"
+                            aria-live="polite"></small></div><button class="button primary wide" type="submit">Log in
+                        <span aria-hidden="true">↗</span></button>
+                    <p class="form-status" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <div><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="30"
+                        height="30">Nova<span>Wiki</span></a>
+                <p>Made for curious minds. Built by students.</p>
+            </div>
+            <div><a href="articles.html">Library</a><a href="resources.html">Resources</a><a href="contact.html">Get in
+                    touch</a></div>
+            <div><strong>AITU · SE-2516</strong>
+                <p>Web Technologies · Final Project 2026</p>
+            </div>
+        </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>

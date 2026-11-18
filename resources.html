@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NovaWiki — a student-built web development learning hub.">
+    <title>Live resources | NovaWiki</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body data-page="resources">
+    <div id="scrollProgress" aria-hidden="true"></div><a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner"><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="35"
+                    height="35">Nova<span>Wiki</span></a><button id="menuToggle" class="icon-button menu-toggle"
+                aria-expanded="false" aria-controls="navigation" type="button">☰ <span
+                    class="sr-only">Menu</span></button>
+            <nav id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a
+                    href="articles.html">Library</a><a href="roadmap.html">Roadmap</a><a href="resources.html"
+                    aria-current="page">Live resources</a><a href="about.html">About</a><a
+                    href="contact.html">Contact</a></nav>
+            <div class="header-actions"><button id="themeToggle" class="theme-toggle" type="button" role="switch"
+                    aria-checked="false" aria-label="Dark mode"><span class="theme-knob">☀</span></button><a
+                    id="accountLink" class="button small outline" href="login.html">Log in</a></div>
+        </div>
+    </header>
+    <main id="main" class="shell main-content">
+        <section class="page-intro">
+            <p class="eyebrow">03 / CONNECTED KNOWLEDGE</p>
+            <h1>Beyond <em>NovaWiki.</em></h1>
+            <p class="lead">Discover related articles from Wikipedia using its public MediaWiki API. Explore web
+                concepts beyond our curated library.</p>
+        </section>
+        <section class="panel api-panel">
+            <div class="api-top">
+                <div><span class="tag">PUBLIC API · WIKIPEDIA</span>
+                    <h2>Explore the wider web.</h2>
+                    <p>Choose a subject or enter a web development topic.</p>
+                </div><button id="refreshApi" class="button outline" type="button">↻ Refresh</button>
+            </div><label for="apiQuery">Topic</label>
+            <div class="api-search"><input id="apiQuery" type="search" value="Web development"
+                    placeholder="Search a technology"><button id="apiSearch" type="button" class="button primary">Search
+                    ↗</button></div>
+            <div class="filter-row"><button class="filter api-topic" data-query="HTML"
+                    type="button">HTML</button><button class="filter api-topic" data-query="CSS"
+                    type="button">CSS</button><button class="filter api-topic" data-query="JavaScript"
+                    type="button">JavaScript</button><button class="filter api-topic" data-query="Web accessibility"
+                    type="button">Accessibility</button></div>
+            <p id="apiStatus" class="muted" role="status" aria-live="polite"></p>
+            <div id="apiResults" class="api-grid"></div>
+        </section>
+        <section class="section">
+            <p class="eyebrow">TRUSTED REFERENCES</p>
+            <h2>Keep these close.</h2>
+            <div class="card-grid"><a class="reference-card"
+                    href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank"
+                    rel="noopener"><span>MDN ↗</span>
+                    <h3>MDN Web Docs</h3>
+                    <p>Practical tutorials and reference material.</p>
+                </a><a class="reference-card" href="https://web.dev/learn/" target="_blank" rel="noopener"><span>WEB.DEV
+                        ↗</span>
+                    <h3>Learn by Google</h3>
+                    <p>Modern web development courses.</p>
+                </a><a class="reference-card" href="https://www.w3.org/WAI/" target="_blank" rel="noopener"><span>W3C
+                        ↗</span>
+                    <h3>Web accessibility</h3>
+                    <p>Guidance for building inclusive websites.</p>
+                </a></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <div><a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="30"
+                        height="30">Nova<span>Wiki</span></a>
+                <p>Made for curious minds. Built by students.</p>
+            </div>
+            <div><a href="articles.html">Library</a><a href="resources.html">Resources</a><a href="contact.html">Get in
+                    touch</a></div>
+            <div><strong>AITU · SE-2516</strong>
+                <p>Web Technologies · Final Project 2026</p>
+            </div>
+        </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>
